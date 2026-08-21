@@ -1,0 +1,10 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[64414],{
+
+/***/ 537367:
+function(_,__,__webpack_require__){__webpack_require__.n_x=__webpack_require__.n;const __web_req__=__webpack_require__;__web_req__(765703);globalThis._5f74ec40302898c5a55451c9fbd04240=globalThis._5f74ec40302898c5a55451c9fbd04240||{};(function(__c){var lUd=__webpack_require__(296713),N4=lUd.jsx,mUd=lUd.jsxs;var nUd=__webpack_require__(850680).PA;var oUd=__webpack_require__(978109),pUd=oUd.useCallback,qUd=oUd.useMemo,rUd=oUd.useState;var sUd=class{get dca(){return!this.Xm.active}get VM(){return __c.Dd()||this.isPlaying||this.nk}get kca(){return!this.VM}get isPlaying(){return this.$p.isPlaying(this.fill)}get Yc(){return this.$p.Yc(this.fill)}get nk(){return this.$p.nk(this.fill)}get Dj(){return this.$p.Dj(this.fill)}get duration(){return this.$p.getDuration(this.fill)}get kq(){return this.$p.getState(this.fill).kq}get currentTime(){return this.$p.getCurrentTime(this.fill)}get Di(){return __c.qA(this.$p,this.fill)}get volume(){return this.$p.getVolume(this.fill)}get muted(){return this.volume===
+0}constructor(a,b,c){this.$p=a;this.fill=b;this.Xm=c;this.contentType=1;this.Ba=this.zIndex=void 0;this.goa=this.VR=this.QX=this.yG=this.g_a=this.AZa=this.ZM=this.eoa=!0;this.LX=this.D8a=!1}};__c.pdb=nUd(a=>{var {IXa:b,Wab:c,JSb:d,...e}=a,f=b(),g=e.item;__c.w(g.type==="design");var [h,k]=rUd(0),l=qUd(()=>new __c.wvb,[]),m=__c.y(__c.uTa(c,__c.y(g.P.first()))),n=pUd(t=>{t!=null&&l.esa(t)},[l]),p=l.active?{width:h,left:0}:a.ye,q=qUd(()=>new sUd(f,m,l),[m,l,f]),r=qUd(()=>new __c.uA(f,m),[m,f]);return a.ka.vg?.eIa!=null?N4(d,{...e}):N4(__c.dI,{onResize:t=>k(t.entry?.width??0),children:({Je:t})=>mUd("div",{ref:__c.qe(n,t),className:"jkKFFw",children:[N4(d,{...e,ye:p}),N4(__c.tA,{store:q,controller:r,
+HJa:!0,Xm:l})]})})});
+}).call(globalThis,globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/6a0df4c86b530821.js.map

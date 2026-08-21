@@ -1,0 +1,5 @@
+# Superseded Canva PNG/JPG originals, kept locally only
+_media-originals/
+
+# Original single-file curl of the Canva site, superseded by docs/
+/index.html

@@ -1,0 +1,12 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[44057],{
+
+/***/ 189536:
+function(_,__,__webpack_require__){__webpack_require__.n_x=__webpack_require__.n;const __web_req__=__webpack_require__;__web_req__(765703);__web_req__(166656);__web_req__(339881);__web_req__(144328);__web_req__(514212);globalThis._5f74ec40302898c5a55451c9fbd04240=globalThis._5f74ec40302898c5a55451c9fbd04240||{};(function(__c){var W5=__c.W5;var Y0d=function(){return{ref:void 0,set:a=>{__c.u(a==null)}}},Z0d=__webpack_require__(296713),$0d=Z0d.Fragment,X5=Z0d.jsx,a1d=Z0d.jsxs;var b1d=__webpack_require__(850680).PA;var c1d;c1d=(a,b={})=>__c.$0(a,{color:"#ffffff",...b});
+__c.Pcd={lk:__c.Cz()(({HA:{expr:a}})=>({...__c.sU,metadata:{type:"demo-12",name:__c.fc("vAIjvQ",[12])},NQ:["responsive"],GF:__c.U0d,C:__c.Bz(b1d(({data:{C:b,local:c},ja:{page:d,Fa:e},Od:f})=>{var g=a.classes.V_,h=a.classes.Eva,k=[`Document ID: ${d.container.id}`,`Language: ${d.container.language??"not set"}`,`Interactivity: ${e>10?"PERSISTENT":"NONE"}`,`Selected: ${c.selected}`,""].join("\n");d=()=>b.width/2+5;var l=a.computed(()=>b.La.length),m=W5(b,{La:void 0}),n=W5(b,{W:void 0}).map(r=>[r],([r])=>
+r),p=[],q=h.create({},{N:{fill:g.create({},{N:{Oa:Y0d()}})},attributes:{weight:W5(b,{qe:void 0}),color:__c.V5(W5(b,{borderColor:void 0})),Xc:W5(b,{Jia:void 0}).map(r=>r??p,r=>r.length?r:void 0),Xe:!0}});return a1d($0d,{children:[Array(l()).fill(null).map((r,t)=>X5(f.Zx,{args:{},N:{stroke:a.box(q),fill:g.create({},{N:{Oa:Y0d()},attributes:{color:__c.V5(m.project(__c.P0d(t)))}})},attributes:{locked:!1,top:0,left:()=>Math.max(t*b.width/l()-.5,0),width:()=>b.width/l()+.5,height:()=>b.height,W:n}},t)),
+X5(f.Fu,{args:{},N:{text:()=>c1d(k,{color:b.Ne,...__c.a1(b.Kx)})},attributes:{top:5,left:5,width:40,height:40}}),X5(f.Fu,{args:{},N:{text:()=>b.label},attributes:{top:()=>b.height-40-5,left:d,width:40,height:40}}),X5(f.Fu,{args:{},N:{text:()=>c.srb},attributes:{top:5,left:d,width:40,height:40},hfa:!1}),X5(f.$x,{Kv:"footest",style:{position:"absolute",top:b.height-40-5,left:5,width:40,height:40,color:b.Ne},children:X5(f.Ih,{text:c1d("This text is rendered as a normal React component.",{color:b.Ne,
+...__c.a1(b.Kx)})})})]})}))}))};
+}).call(globalThis,globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/2dd49d5cd109a4df.js.map

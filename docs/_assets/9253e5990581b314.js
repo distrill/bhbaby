@@ -1,0 +1,11 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[8084],{
+
+/***/ 827393:
+function(_,__,__webpack_require__){__webpack_require__.n_x=__webpack_require__.n;const __web_req__=__webpack_require__;__web_req__(765703);__web_req__(144328);globalThis._5f74ec40302898c5a55451c9fbd04240=globalThis._5f74ec40302898c5a55451c9fbd04240||{};(function(__c){var o1d=__webpack_require__(296713),$5=o1d.jsx,p1d=o1d.jsxs;var q1d=__webpack_require__(850680).PA;var r1d;r1d=new __c.Mv(255,255,255);
+__c.Ucd={Fva:{iEc:"label",BDc:"goal",VFc:"status-text"},lk:__c.Cz()(()=>({...__c.sU,metadata:{type:"demo-17",name:__c.fc("vAIjvQ",[17])},NQ:["responsive"],C:__c.Bz(q1d(({data:{C:a},Od:b})=>{var c=`${a.O3a}%`,d=__c.pC(__c.aw(__c.Vv(a.Yca),.1),r1d).hs(),e=__c.fw(__c.aw(__c.Vv(a.Yca),.2)),f=__c.ym.create({...__c.gq,stream:__c.cj(__c.dj.sb().attrs(a.JLb).eb(`${a.O3a}% complete`)).build()});return $5("div",{style:{position:"relative",width:"100%",height:"100%",boxSizing:"border-box",padding:24,borderRadius:20,
+background:d,border:`2px solid ${a.Yca}`,overflow:"hidden"},children:p1d("div",{style:{position:"relative",height:"100%",display:"flex",flexDirection:"column",justifyContent:"space-between",gap:18},children:[$5("div",{style:{alignSelf:"flex-start",padding:"4px 10px",borderRadius:999,background:e},children:$5(b.oP,{text:a.label,selection:{mode:"react",Kv:"label"}})}),$5("div",{children:$5(b.oP,{text:a.orb,selection:{mode:"react",Kv:"goal"}})}),p1d("div",{style:{display:"grid",gap:12},children:[$5("div",
+{style:{height:16,borderRadius:999,background:e,border:`2px solid ${a.Yca}`,boxSizing:"border-box",overflow:"hidden"},children:$5("div",{style:{width:c,height:"100%",borderRadius:999,background:a.Yca}})}),$5(b.$x,{Kv:"status-text",style:{width:"fit-content"},children:$5("div",{style:{display:"inline-block",width:"fit-content"},children:$5(b.Ih,{text:f})})})]})]})})}))}))};
+}).call(globalThis,globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/9253e5990581b314.js.map
