@@ -166,6 +166,61 @@ form.addEventListener('change', e => {
   }
 });
 
+// The "Please click the RSVP button..." nudge lives in the Canva page around
+// this iframe, not in here. Located by text because Canva's class names are
+// generated; faded via an injected !important rule because the renderer
+// reapplies inline styles on scroll.
+function hideParentNudge() {
+  const PHRASE = 'kindly let us know';
+  const MAX_BLOCK = 260;   // guards against climbing into a page-level wrapper
+  // textContent would match the page-data JSON, which carries this same
+  // sentence inside a <script>. Only rendered text counts.
+  const SKIP = /^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|HEAD|TITLE|META|LINK)$/;
+  try {
+    if (window.parent === window) return;
+    const doc = window.parent.document;
+
+    // Reverse document order visits children before parents, so each element's
+    // rendered text is built once from cached child results.
+    const nodes = Array.from(doc.body.querySelectorAll('*'));
+    const text = new Map();
+    for (let i = nodes.length - 1; i >= 0; i--) {
+      const n = nodes[i];
+      if (SKIP.test(n.tagName)) { text.set(n, ''); continue; }
+      let t = '';
+      for (const c of n.childNodes) {
+        if (c.nodeType === 3) t += c.nodeValue;
+        else if (c.nodeType === 1) t += (text.get(c) || '');
+      }
+      text.set(n, t);
+    }
+
+    // Descendants come after ancestors, so the last match is the deepest.
+    let el = null;
+    for (const n of nodes) {
+      if ((text.get(n) || '').toLowerCase().includes(PHRASE)) el = n;
+    }
+    if (!el) return;
+
+    // Climb to the block holding the whole nudge, not just the matching line.
+    while (el.parentElement && el.parentElement !== doc.body &&
+           (text.get(el.parentElement) || '').trim().length <= MAX_BLOCK) {
+      el = el.parentElement;
+    }
+
+    if (!doc.getElementById('rsvp-nudge-style')) {
+      const s = doc.createElement('style');
+      s.id = 'rsvp-nudge-style';
+      s.textContent = '.rsvp-nudge-done{opacity:0!important;' +
+                      'transition:opacity .6s ease!important;pointer-events:none!important}';
+      doc.head.appendChild(s);
+    }
+    el.classList.add('rsvp-nudge-done');
+  } catch (e) {
+    // Opened standalone, or the text moved. Leaving the page untouched is fine.
+  }
+}
+
 function fail(msg) {
   errorEl.textContent = msg;
   errorEl.hidden = false;
@@ -212,6 +267,7 @@ form.addEventListener('submit', async e => {
       : "Thank you for letting us know — you'll be missed.";
     form.hidden = true;
     document.getElementById('done').hidden = false;
+    hideParentNudge();
   } catch (err) {
     fail("Sorry — that didn't send. Please try again, or text us your RSVP.");
   }
